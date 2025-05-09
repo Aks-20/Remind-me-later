@@ -9,6 +9,11 @@ This backend API lets users set reminders by specifying:
 
 The API saves the reminder to MongoDB. Actual delivery (sending the message) is not part of this project scope.
 
+Frontend sends a POST request to /api/reminders with reminder details
+Backend validates input and stores it in MongoDB
+The project uses modular routing (reminderRoutes.js)
+Uses Mongoose schema validation for strict input checking
+
 ---
 
 ## 🛠️ Tech Stack
